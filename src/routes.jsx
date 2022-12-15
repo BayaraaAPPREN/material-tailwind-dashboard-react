@@ -8,6 +8,13 @@ import {
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
 import { SignIn, SignUp } from "@/pages/auth";
+import Urd from "./pages/dashboard/urd";
+import Mongol from "./pages/dashboard/mongol";
+import {BsTruck, BsBoxSeam} from 'react-icons/bs'
+import {BiHelpCircle} from 'react-icons/bi'
+import {AiOutlineCheckCircle} from 'react-icons/ai' 
+import {MdOutlineDeliveryDining} from 'react-icons/md'
+import {GrDropbox} from 'react-icons/gr'
 
 const icon = {
   className: "w-5 h-5 text-inherit",
@@ -19,28 +26,47 @@ export const routes = [
     pages: [
       {
         icon: <HomeIcon {...icon} />,
-        name: "dashboard",
+        name: "Нүүр",
         path: "/home",
         element: <Home />,
       },
       {
-        icon: <UserCircleIcon {...icon} />,
-        name: "profile",
-        path: "/profile",
-        element: <Profile />,
+        icon: <BsBoxSeam {...icon} />,
+        name: "Урд бүртгэл",
+        path: "/urd",
+        element: <Urd />,
       },
       {
-        icon: <TableCellsIcon {...icon} />,
-        name: "tables",
-        path: "/tables",
-        element: <Tables />,
+        icon: <BsTruck {...icon} />,
+        name: "Монгол дахь бүртгэл",
+        path: "/mongol",
+        element: <Mongol />,
       },
       {
-        icon: <BellIcon {...icon} />,
-        name: "notifactions",
-        path: "/notifactions",
+        icon: <BiHelpCircle {...icon} />,
+        name: "Эзэнгүй бараа",
+        path: "/ezengui",
         element: <Notifications />,
       },
+      {
+        icon: <GrDropbox {...icon} />,
+        name: "Ирсэн бараа",
+        path: "/irsen",
+        element: <Notifications />,
+      },
+      {
+        icon: <MdOutlineDeliveryDining {...icon} />,
+        name: "Хүргэлт",
+        path: "/delivery",
+        element: <Notifications />,
+      },
+      {
+        icon: <AiOutlineCheckCircle {...icon} />,
+        name: "Хүлээлгэж өгсөн",
+        path: "/comfirm",
+        element: <Notifications />,
+      },
+     
     ],
   },
   {
@@ -52,12 +78,6 @@ export const routes = [
         name: "sign in",
         path: "/sign-in",
         element: <SignIn />,
-      },
-      {
-        icon: <UserPlusIcon {...icon} />,
-        name: "sign up",
-        path: "/sign-up",
-        element: <SignUp />,
       },
     ],
   },

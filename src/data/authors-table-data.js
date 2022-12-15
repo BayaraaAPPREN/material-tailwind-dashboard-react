@@ -47,6 +47,30 @@ export const authorsTableData = [
     online: false,
     date: "14/09/20",
   },
+  {
+    img: "/img/team-3.jpeg",
+    name: "Michael Levi",
+    email: "michael@creative-tim.com",
+    job: ["Programator", "Developer"],
+    online: true,
+    date: "24/12/08",
+  },
+  {
+    img: "/img/bruce-mars.jpeg",
+    name: "Bruce Mars",
+    email: "bruce@creative-tim.com",
+    job: ["Manager", "Executive"],
+    online: false,
+    date: "04/10/21",
+  },
+  {
+    img: "/img/team-2.jpeg",
+    name: "Alexander",
+    email: "alexander@creative-tim.com",
+    job: ["Programator", "Developer"],
+    online: false,
+    date: "14/09/20",
+  },
 ];
 
 export default authorsTableData;
